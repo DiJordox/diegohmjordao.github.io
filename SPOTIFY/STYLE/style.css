@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+}
+
+body{
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+li{
+    list-style: none;
+}
+
+:root{
+    --backgroundNav: #000000;
+    --firstDiv: #1d75de;
+    --background-base: #191414;
+    --greenSpotify:#1ed760;
+    --whiteColor: rgb(255, 255, 255);
+    --thirdDiv: #efefef;
+    --spotifyPlan: rgb(13, 114, 234);
+    --footerColor: #919496;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--backgroundNav);
+    height: 9vh;
+    color: var(--whiteColor);
+    padding: 0 300px;
+}
+
+.link-nav-list{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.link-nav-list li{
+    cursor: pointer;
+    padding: 30px 10px;
+    transition: 300ms ease;
+}
+
+.link-nav-list li:hover{
+    color: var(--greenSpotify);
+}
+
+.spotify-black-logo{
+    width: 135px;
+}
+
+.headerDiv{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+
+.firstContent{
+    background-color: var(--firstDiv);
+    height: 43vh;
+    color: var(--whiteColor);
+}
+
+.li-lastChild:hover{
+    color: var(--whiteColor);
+    cursor: default;
+}
+
+.firstContent-article{
+    padding: 75px 300px;
+}
+
+.firstContent-article h1{
+    font-size: 40px;
+    padding-bottom: 35px;
+}
+
+.firstContent-article h2{
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.firstContent-btn-btn{
+    margin: 50px 0;
+    padding: 18px 40px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    color: var(--whiteColor);
+}
+
+.firstContent-btn-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.btn1{
+    background-color: var(--background-base);
+    margin-right: 10px;
+}
+
+.btn2{
+    background-color: transparent;
+    border: 2px solid var(--whiteColor);
+}
+
+.firstContent-article p{
+    font-size: 0.6875rem;
+}
+
+.firstContent-article span, .spotifyPlans-div2 span{
+    text-decoration: underline;
+}
+
+.firstContent-article span:hover{
+    cursor: pointer;
+}
+
+.secondContent{
+    background-color: var(--whiteColor);
+    display: flex;
+    margin-top: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 60vh;
+}
+
+.secondContent h2{
+    font-size: 40px;
+    margin: 20px;
+    font-weight: bolder;
+}
+
+.secondContent-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.secondContent-div-div img{
+    height: 142px;
+    width: 142px;
+}
+
+.secondContent-div-div h3{
+    margin: 10px;
+    font-size: 21px;
+}
+
+.secondContent-div-div p{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.thirdContent{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--thirdDiv);
+    text-align: center;
+    height: 120vh;    
+}
+
+.thirdContent h3{
+    padding-top: 50px;
+    font-size: 40px;
+    letter-spacing: -1.6px;
+}
+
+.thirdContent p{
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.credCardLogo-menu{
+    display: flex;
+    text-decoration: underline;
+    justify-content: center;
+    margin: 30px 0 60px;
+}
+
+.credCardLogo-menu li{
+    padding: 5px;
+}
+
+.credCardLogo-menu li img{
+    width: 29px;
+    height: 20px;
+}
+
+.spotifyPlans{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spotifyPlans-div{
+    box-shadow: 0 0px 5px var(--footerColor);
+    border-radius: 8px;
+    margin: 0 8px;
+    background-color: var(--whiteColor);
+    height: 700px;
+    max-width: 15%;
+}
+
+.spotifyPlan-subdiv{
+    display: block;
+    text-align: left;
+    padding: 15px;
+}
+
+.spotifyPlan-subdiv p:first-child{
+    display: inline-block;
+    background-color: var(--spotifyPlan);
+    color: var(--whiteColor);
+    border-radius: 6px;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.spotifyPlan-subdiv p:nth-child(2){
+    display: inline-block;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid;
+    color: var(--spotifyPlan);
+    padding: 5px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.spotifyPlan-subdiv h2{
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.spotifyPlan-subdiv p:last-child{
+    padding: 10px 0;
+}
+
+.spotifyPlans-div-last{
+    display: block;
+    border-bottom: 1px solid var(--backgroundNav);
+    margin: 0 10px;
+}
+
+.spotifyPlans-div2{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.spotifyPlans-div2-div2{
+    display:flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.checkImage{
+    width: 20px;
+    height: 20px;
+}
+
+.spotifyPlans-div2-lastP{
+    text-align: left;
+    padding: 5px;
+}
+
+.btn-comecar{
+    background-color: var(--background-base);
+    color: var(--thirdDiv);
+    padding: 15px 70px;
+    border: none;
+    border-radius: 30px;
+    margin: 160px 0 10px;
+}
+
+.btn-comecar:hover{
+    transform: scale(1.05);
+}
+
+.btn-comecar2{
+    margin-top: 142px;
+}
+
+.btn-comecar3{
+    margin-top: 60px;
+}
+
+.btn-comecar4{
+    margin-top: 143px;
+}
+
+.spotifyPlans-div2-div2-lastDiv p{
+    text-align: left;
+    font-size: 10px;
+    color: var(--background-base);
+}
+
+.spotifyPlans-div-last-last{
+    margin-top: 33px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 40vh;
+    background-color: var(--backgroundNav);
+    color: var(--thirdDiv);
+}
+
+.div-Footer{
+    margin: 50px 15px;
+}
+
+.div-Footer h2{
+    font-size: 12px;
+    color: var(--footerColor);
+}
+
+.footer-menu{
+    margin: 30px 0;
+}
+
+.footer-menu li{
+    margin: 15px 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-menu li:hover{
+    color: var(--greenSpotify);
+    cursor: pointer;
+}
+
+@media (max-width: 1500px){
+    .navbar{
+        padding: 40px  60px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .firstContent{
+        height: 60vh;
+    }
+
+    .firstContent-article {
+        padding: 45px;
+    }
+
+    .firstContent-article h1{
+        font-weight: bolder;
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+
+    .firstContent-article h2{
+        font-size: 22px;
+        padding-bottom: 0;
+    }
+
+    .secondContent{
+        margin: 0;
+        text-align: center;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 75vh;
+    }
+
+    .thirdContent{
+        height: 160vh;
+    }
+
+    .spotifyPlan-subdiv p:first-child{
+        font-size: 14px;
+        padding: 3px 10px;
+        margin-bottom: 3px;
+    }
+
+    .spotifyPlans-div{
+        height: 110vh;
+        max-width: 20%;
+    }
+
+    .spotifyPlan-subdiv h2{
+        padding: 5px 0;
+    }
+
+    footer{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 770px){
+    .link-nav-list{
+        display: none;
+    }
+
+    .navbar{
+        padding:20px;
+    }
+
+    .firstContent-btn-btn{
+        padding: 20px 120px;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .firstContent{
+        height: auto;
+    }
+
+    .firstContent-article{
+        flex-direction: column;
+        padding: 20px
+    }
+
+    .firstContent-btn-btn{
+        margin: 10px 0;
+    }
+
+    .secondContent{
+        height: 140vh;
+    }
+
+    .secondContent-div{
+        display: block;
+        flex-direction: column;
+    }
+
+    .secondContent-div-div{
+        margin: 10px 0 20px;
+    }
+
+    .thirdContent{
+        height: 450vh;
+    }
+
+    .thirdContent p{
+        font-size: 16px;
+    }
+
+    .spotifyPlans{
+        display: block;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .spotifyPlans-div{
+        max-width: 75%;
+        height: 95vh;
+        margin: 30px 50px;
+    }
+
+    .btn-comecar4{
+        margin: 50px 0 10px;
+    }
+
+    footer{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .div-Footer h2{
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .div-Footer img{
+        padding: 30px 0 10px;
+    }
+
+    .footer-menu li{
+        padding: 5px;
+        font-size: 16px;
+    }
+}
