@@ -357,7 +357,7 @@ footer{
     cursor: pointer;
 }
 
-@media (max-width: 1500px){
+@media (min-width: 771px) and (max-width: 1500px){
     .navbar{
         padding: 40px  60px;
         font-weight: 700;
@@ -418,7 +418,7 @@ footer{
     }
 }
 
-@media (max-width: 770px){
+@media (min-width: 481px) and (max-width: 770px){
     .link-nav-list{
         display: none;
     }
@@ -504,5 +504,28 @@ footer{
     .footer-menu li{
         padding: 5px;
         font-size: 16px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .navbar{
+        padding: 30px;
+    }
+
+    .secondContent{
+        height: 100vh;
+    }
+
+    .thirdContent{
+        height:570vh;
+    }
+
+    .spotifyPlans-div{
+        height: 175vh;
+    }
+
+    footer{
+        height: 165vh;
     }
 }
